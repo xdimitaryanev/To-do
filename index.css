@@ -14,17 +14,17 @@ background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, 
 padding: 10px;
 }
 
-.toDoApp {
+.to-do-app {
     width: 100%;
     max-width: 540px;
     background-color: #F6F9FF;
-    margin: 100px auto 20px;
+    margin: 10px auto 20px;
     border-radius: 20px;
     padding: 40px 30px 70px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.toDoApp h2 {
+.to-do-app h2 {
     color: #414656;
     display: flex;
     align-items: center;
@@ -33,10 +33,12 @@ padding: 10px;
 
 #input-bar{
     flex: 1;
+    width: 100%;
     border: none;
     outline: none;
     background:transparent;
     padding: 10px;
+
 }
 
 #add-btn{
@@ -73,10 +75,6 @@ ul li {
     text-transform: uppercase;
     word-wrap: break-word;
     overflow: hidden;
-   
-
-
-
 }
 
 #check-important{
@@ -99,22 +97,13 @@ color:#FAC2C1;
 
 }
 
-.doneApp {
-    width: 100%;
-    max-width: 540px;
-    background-color: #F6F9FF;
-    margin: 10px auto 20px;
-    border-radius: 20px;
-    padding: 40px 30px 70px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
 .delete-btn {
     border: none;
     outline: none;
     padding: 4px 10px;
     margin-top: 1px;
     margin-left: 10px;
+    margin-right: 2px;
     background: #FAC2C1;
     color: #F6F9FF;
     cursor: pointer;
@@ -136,7 +125,8 @@ color:#FAC2C1;
     outline: none;
     padding: 4px 10px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
     background: #7FD1AE;
     color: #F6F9FF;
     cursor: pointer;
@@ -157,7 +147,8 @@ color:#FAC2C1;
     outline: none;
     padding: 4px 10px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 2px;
+    margin-right: 1px;
     background: #2F3945;
     color: #F6F9FF;
     cursor: pointer;
@@ -180,8 +171,48 @@ color:#FAC2C1;
   .done-btn:active{
     transform: scale(0.99);
   }
+
+  .edit-btn {
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: #74F0EF;
+    color: #F6F9FF;
+    cursor: pointer;
+    border-radius: 3px;
+    visibility: hidden;
+    user-select: none;
+  }
+  .edit-btn:active{
+    transform: scale(0.99);
+  }
 .hidden {
     visibility: visible;
+
  }
+ .red {
+    color: red;
+ }
+
+ .checkbox {
+    height: 12px;
+    margin-left: 2px;
+    position: relative;
+
+ }
+
+#clock {
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color:#242F3A;
+}
  
+
+
 
