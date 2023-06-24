@@ -15,6 +15,7 @@ padding: 10px;
 }
 
 .to-do-app {
+    margin-right: 10px;
     width: 100%;
     max-width: 540px;
     background-color: #F6F9FF;
@@ -213,6 +214,4 @@ color:#FAC2C1;
     color:#242F3A;
 }
  
-
-
 
