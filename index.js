@@ -22,6 +22,11 @@ doneBtn.className = "done-btn", "hidden";
 liEl.append(doneBtn)
 doneBtn.textContent = "Done";
 doneBtn.addEventListener("click", moveToDone);
+let markImpBtn = document.createElement("button");
+markImpBtn.className = "mark-imp-btn", "hidden";
+liEl.append(markImpBtn)
+markImpBtn.textContent = "Mark Important";
+markImpBtn.addEventListener("click", markImp);
     inputBarEl.value = "";
 }
 
@@ -46,8 +51,8 @@ function addBtns (e) {
     e.preventDefault();
 
 e.target.children[0].classList.toggle("hidden")
-console.log(e.target.children[1])
 e.target.children[1].classList.toggle("hidden")
+e.target.children[2].classList.toggle("hidden")
 }}
 
 function moveToDone (e) {
@@ -55,6 +60,16 @@ function moveToDone (e) {
 let liEl = document.createElement("li");
 donelistContainerEl.append(liEl);
 liEl.textContent = e.target.parentElement.textContent;
+let diff = liEl.textContent.length - 24
+console.log(diff)
+let str = e.target.parentElement.textContent;
+let str2 = str.slice(0,diff )
+liEl.textContent=str2;
+
+
 e.target.parentElement.remove()
+
+}
+function markImp () {
 
 }

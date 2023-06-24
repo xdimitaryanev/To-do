@@ -73,13 +73,21 @@ ul li {
     text-transform: uppercase;
     word-wrap: break-word;
     overflow: hidden;
+   
+
 
 
 }
 
+#check-important{
+    margin-left: 400px;
+}
+
 ul li:hover {
-    color:#FAC2C1;
-    text-decoration: line-through;
+color:#FAC2C1;
+    
+
+    
 }
 
 
@@ -112,10 +120,16 @@ ul li:hover {
     cursor: pointer;
     border-radius: 3px;
     visibility: hidden;
-  
-
-
 }
+    .delete-btn:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        background-color:#7FD1AE;
+    
+        transition-duration: 500ms;
+  }
+
+
+
 
 .done-btn {
     border: none;
@@ -128,10 +142,46 @@ ul li:hover {
     cursor: pointer;
     border-radius: 3px;
     visibility: hidden;
+}
+
+.done-btn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color:#7FD1AE;
   
-  
+    transition-duration: 500ms;
 
 }
-.hidden {
-   visibility: visible;
+
+.mark-imp-btn {
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #2F3945;
+    color: #F6F9FF;
+    cursor: pointer;
+    border-radius: 3px;
+    visibility: hidden;
+    user-select: none;
+
 }
+.mark-imp-btn:hover {
+    
+    color: #fff;
+    
+}
+.mark-imp-btn:active {
+    transform: scale(0.99);
+  }
+  .delete-btn:active{
+    transform: scale(0.99);
+  }
+  .done-btn:active{
+    transform: scale(0.99);
+  }
+.hidden {
+    visibility: visible;
+ }
+ 
+
